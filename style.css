@@ -1,0 +1,24 @@
+.cell {
+    width: 40px; 
+    height: 40px; 
+    margin: 0px; 
+    background-color: rgba(0, 0, 0, 0); 
+}
+
+main {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 5%; 
+}
+
+.column {
+    display: flex; 
+    flex-direction: row; 
+}
+
+.wall {
+    background-color: black;
+    drop-shadow(16px, 16px, 10px, black); 
+}
