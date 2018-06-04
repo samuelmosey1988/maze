@@ -1,4 +1,11 @@
+/* all elements have no padding or margin by default */
+* {
+    padding: 0;
+    margin: 0;
+}
+
 .cell {
+    box-sizing: border-box;
     width: 40px; 
     height: 40px; 
     margin: 0px; 
@@ -6,19 +13,33 @@
 }
 
 main {
-    display: flex; 
+    /* display: flex; 
     flex-direction: column; 
     justify-content: center; 
-    align-items: center; 
-    margin-top: 5%; 
+    align-items: center;  */
+    margin: 0;
 }
 
-.column {
+.row {
     display: flex; 
     flex-direction: row; 
 }
 
 .wall {
     background-color: black;
-    drop-shadow(16px, 16px, 10px, black); 
+}
+
+.openSpace {
+    background-color: crimson; 
+}
+
+
+
+#player {
+    position: absolute;
+    box-sizing: border-box; 
+    width: 40px; 
+    height: 40px; 
+
+    
 }
